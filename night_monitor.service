@@ -1,0 +1,13 @@
+[Unit]
+Description=Night Monitor Demon
+After=network.target
+
+[Service]
+ExecStart=/PATH
+Restart=always
+RestartSec=5s
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
